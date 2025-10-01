@@ -1,5 +1,5 @@
-#ifndef MAINWINDOW_H
-#define MAINWINDOW_H
+#ifndef YAMITRACKER_H
+#define YAMITRACKER_H
 
 #include <QMainWindow>
 #include <QPushButton>
@@ -11,13 +11,13 @@
 #include <QGroupBox>
 #include <QMap>
 
-class MainWindow : public QMainWindow
+class Yamitracker : public QMainWindow
 {
     Q_OBJECT
 
 public:
-    MainWindow(QWidget *parent = nullptr);
-    ~MainWindow();
+    Yamitracker(QWidget *parent = nullptr);
+    ~Yamitracker();
 
 private slots:
     void onNotePressed(int note);
@@ -51,4 +51,4 @@ private:
     // Style
     void applyModernStyle();
 };
-#endif // MAINWINDOW_H
+#endif // YAMITRACKER_H
